@@ -1,0 +1,95 @@
+/* color scheme sourced from https://coolors.co/palettes/trending */
+:root {
+    --wine: #5f0f40;
+    --berg: #9a031e;
+    --juice: #fb8b24;
+    --orange: #e36414;
+    --stormy: #0f4c5c;
+
+
+  }
+ 
+  *{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    background-color: var(--stormy);
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color:var(--wine);
+    padding: 1%;
+    width: 100%;
+    margin: 0px;
+  }
+
+  h1{
+    color: var(--orange);
+    font-size: 250%;
+  }
+  
+
+  nav ul{
+    display:flex;
+    justify-content: space-between;
+    min-width: 300px;
+    align-items: flex-end;
+  }
+  nav ul a{
+    font-size: 200%;
+    color: var(--orange);
+    text-decoration: underline;
+    padding: 15px;
+    min-width: 100px;
+  }
+
+  nav ul a:hover{
+    color: var(--juice);
+  }
+  
+  main{
+    background-color: var(--stormy);
+    height:100%
+  }
+
+  section{
+
+  }
+  
+  h2{
+    display: flex;
+    min-width: 100px;
+    text-align: left;
+    background-color: var(--juice);
+    color: var(--wine);
+    padding: 1%;
+    font-size: 200%;
+  }
+  
+
+  /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+  @media screen and (min-width: 768px) {
+  
+
+}
+ 
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+  
+  }
+  
