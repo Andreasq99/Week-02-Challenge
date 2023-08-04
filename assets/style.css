@@ -1,12 +1,18 @@
 /* color scheme sourced from https://coolors.co/palettes/trending */
 :root {
-    --wine: #5f0f40;
-    --berg: #9a031e;
-    --juice: #fb8b24;
-    --orange: #e36414;
-    --stormy: #0f4c5c;
 
 
+    --red: #f94144;
+    --orange: #f3722c;
+    --juice: #f8961e;
+    --grpfrt: #f9844a;
+    --mustard: #f9c74f;
+    --bush: #90be6d;
+    --pine: #43aa8b;
+    --winter: #4d908e;
+    --blubry: #577590;
+    --ocean: #277da1;
+    --grape: #666699;
   }
  
   *{
@@ -19,7 +25,7 @@
     display: flex;
     flex-direction: column;
     line-height: 1.3;
-    background-color: var(--stormy);
+    background-color: var(--juice);
     width:100%;
     margin: 0px;
     padding: 0px;
@@ -28,14 +34,15 @@
   header {
     display: flex;
     justify-content: space-between;
-    background-color:var(--wine);
+  /*  background-color:var(--mustard);*/
+    background-image: linear-gradient(#f9c74f, var(--orange));
     padding: 1%;
     width: 100%;
     margin: 0px;
   }
 
   h1{
-    color: var(--orange);
+    color: var(--ocean);
     font-size: 250%;
   }
   
@@ -48,33 +55,98 @@
   }
   nav ul a{
     font-size: 200%;
-    color: var(--orange);
+    color: var(--ocean);
     text-decoration: underline;
     padding: 15px;
     min-width: 100px;
   }
 
   nav ul a:hover{
-    color: var(--juice);
+    color: var(--winter);
   }
   
+  nav ul a:active{
+    color: var(--bush);
+  }
+
   main{
-    background-color: var(--stormy);
     height:100%
   }
 
   section{
-
+    display: flex;
+    width: 100%;
+    flex: 1 0 200px;
+    min-height: 300px;
+    border-top: 5px solid var(--grape);
+  }
+  section p{
+    color: purple;
+    font-size: 150%;
+    padding: 40px;
+    width: 50%;
   }
   
   h2{
     display: flex;
-    min-width: 100px;
+    min-width: 250px;
     text-align: left;
     background-color: var(--juice);
-    color: var(--wine);
+    color: var(--grape);
     padding: 1%;
     font-size: 200%;
+    height: 100px;
+    margin-top: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  
+  #about-me{
+    background-image: linear-gradient(var(--orange), var(--red));
+  }
+
+  #about-me div{
+    margin: 10px;
+    scale: 100%;
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+    min-width: 400px;
+    padding: 0px;
+    border-radius: 10px;
+    border: 3px solid var(--grape);
+    background-color: var(--grape);
+    margin-left: 100px;
+  }
+
+  div img{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-radius: 10px;
+  }
+
+  #work{
+    background-image: linear-gradient(var(--red), var(--blubry));
+  }
+
+  #contact{
+    background-image: linear-gradient(var(--blubry), var(--winter));
+  }
+
+  
+  footer{
+    background-color: var(--winter);
+    text-align: center;
+    padding: 1%;
+    border-top: 5px solid var(--grape);
+  }
+
+  footer a{
+    text-decoration: none;
+    font-size: 125%;
+
   }
   
 
@@ -86,9 +158,23 @@
  
   
   /* media query for larger screens */
-  @media screen and (min-width: 992px) {
+  @media screen and (max-width: 992px) {
     header {
-      width: 75%;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    nav ul{
+      flex-direction: column;
+    }
+
+    nav ul li{
+      border-top: 4px solid var(--grape);
+      padding: 1%;
+      text-align: center;
+      width: 100%;
+      text-decoration:none;
+      margin: 0px;
     }
   
   }
