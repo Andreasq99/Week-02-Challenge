@@ -34,7 +34,6 @@
   header {
     display: flex;
     justify-content: space-between;
-  /*  background-color:var(--mustard);*/
     background-image: linear-gradient(#f9c74f, var(--orange));
     padding: 1%;
     width: 100%;
@@ -47,13 +46,14 @@
   }
   
 
-  nav ul{
+  ul{
     display:flex;
     justify-content: space-between;
     min-width: 300px;
     align-items: flex-end;
   }
-  nav ul a{
+
+  ul a{
     font-size: 200%;
     color: var(--ocean);
     text-decoration: underline;
@@ -61,11 +61,11 @@
     min-width: 100px;
   }
 
-  nav ul a:hover{
+  ul a:hover{
     color: var(--winter);
   }
   
-  nav ul a:active{
+  ul a:active{
     color: var(--bush);
   }
 
@@ -79,6 +79,7 @@
     min-height: 300px;
     border-top: 5px solid var(--grape);
   }
+
   section p{
     color: purple;
     font-size: 150%;
@@ -150,8 +151,8 @@
     padding: 0px;
     border: 3px solid var(--grape);
     margin: 10px;
-    margin-left: 175px;
-    margin-right: 175px;
+    margin-left: 3%;
+    margin-right: 3%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -172,7 +173,6 @@
     text-align: center;
     padding: 5px;
     width: 100%;
-    height: 33px;
     background-image: linear-gradient(var(--mustard), var(--orange));
   }
 
@@ -188,8 +188,8 @@
     filter: none;
     border: 7px solid var(--winter);
     margin: 7px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   
@@ -198,6 +198,24 @@
     background-image: linear-gradient(var(--blubry), var(--winter));
   }
 
+  #contact ul li{
+    margin-bottom: 150px;
+    margin-left: 25px;
+    display: flex;
+    min-width: 250px;
+    text-align: center;
+    background-color: var(--juice);
+    padding: 1%;
+    font-size: 200%;
+    height: 100px;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+  
+  #contact ul li a{
+    font-size: 100%;
+    
+  }
   
   footer{
     background-color: var(--winter);
@@ -213,18 +231,21 @@
   }
   
 
-  /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
   @media screen and (min-width: 768px) {
   
 
 }
  
   
-  /* media query for larger screens */
   @media screen and (max-width: 992px) {
     header {
       width: 100%;
       flex-direction: column;
+    }
+
+    #about-me div{
+      margin-left: 10%;
+      width: 80%;
     }
 
     nav ul{
@@ -242,6 +263,14 @@
 
     section{
       flex-direction: column;
+    }
+
+    #work-div{
+      flex-direction: column;
+    }
+
+    #work-div div{
+      width: 70%;
     }
 
     section p{
