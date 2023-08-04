@@ -76,7 +76,6 @@
   section{
     display: flex;
     width: 100%;
-    flex: 1 0 200px;
     min-height: 300px;
     border-top: 5px solid var(--grape);
   }
@@ -130,6 +129,19 @@
   #work{
     background-image: linear-gradient(var(--red), var(--blubry));
   }
+  
+  #main-work{
+    width: 75%;
+    padding: 0px;
+    border: 3px solid var(--grape);
+    margin: 10px;
+  }
+  
+  #main-work:hover{
+    width: 76%;
+    border: 7px solid var(--winter);
+    margin: 6px;
+  }
 
   #contact{
     background-image: linear-gradient(var(--blubry), var(--winter));
@@ -176,6 +188,15 @@
       text-decoration:none;
       margin: 0px;
     }
+
+    section{
+      flex-direction: column;
+    }
+
+    section p{
+      width: 100%;
+    }
+
   
   }
   
