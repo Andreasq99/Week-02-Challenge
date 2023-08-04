@@ -123,25 +123,76 @@
     height: 100%;
     width: 100%;
     padding: 0px;
+  }
+
+  #about-me div img{
     border-radius: 10px;
   }
 
   #work{
     background-image: linear-gradient(var(--red), var(--blubry));
+    display: flex;
+    flex-wrap: wrap;
   }
-  
-  #main-work{
-    width: 75%;
+
+
+  #work-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  #work-div div{
+    opacity: 0.7;
+    filter: alpha(opacity=40);
+    width: 35%;
     padding: 0px;
     border: 3px solid var(--grape);
     margin: 10px;
+    margin-left: 175px;
+    margin-right: 175px;
+    display: flex;
+    flex-wrap: wrap;
   }
   
-  #main-work:hover{
-    width: 76%;
-    border: 7px solid var(--winter);
-    margin: 6px;
+  #main-work{
+    opacity: 0.7;
+    filter: alpha(opacity=40);
+    width: 75%;
+    min-width: 60%;
+    padding: 0px;
+    border: 3px solid var(--grape);
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
   }
+  
+  h3{
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    height: 33px;
+    background-image: linear-gradient(var(--mustard), var(--orange));
+  }
+
+  #main-work:hover{
+    opacity: 1;
+    filter: none;
+    border: 7px solid var(--winter);
+    margin: 7px;
+  }
+
+  #work-div div:hover{
+    opacity: 1;
+    filter: none;
+    border: 7px solid var(--winter);
+    margin: 7px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  
 
   #contact{
     background-image: linear-gradient(var(--blubry), var(--winter));
