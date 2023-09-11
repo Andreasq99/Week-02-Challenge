@@ -172,6 +172,7 @@
   h3{
     text-align: center;
     padding: 5px;
+    height: 30px;
     width: 100%;
     background-image: linear-gradient(var(--mustard), var(--orange));
   }
